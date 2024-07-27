@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navbar project</title>
+  <!-- <link rel="stylesheet" href="style.css"/> -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mainContainer {
+    background-color: #040607;
+    width: 70%;
+    max-width: 1200px;
+  }
+  
+      .navbar-custom {
+        background-color: #f98511;
+      }
+      .navbar-custom .nav-link {
+        color: black;
+      }
+      .navbar-custom .nav-link:hover {
+        color: #555; 
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+      }
+      .intro-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 0;
+      }
+     
+      
+        .container.contact-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+      .logo-stylish {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #040607;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 2.5rem; 
+    width: 100%;
+   
+  }
+  
+  .form-row .form-group {
+    margin-bottom: 30px;
+    
+  }
+  .col-md-6{
+    color: cornsilk;
+  }
+  .img-fluid{
+      border: 4px solid green;
+      width: 350px;
+      height: 280px;
+      margin-left: 60px;
+  }
+  #name::placeholder {
+    color: #ec9e0a; 
+    font-weight: bold;
+  }
+  #name:focus::placeholder {
+    color: #d88b09; 
+  }
+  
+  #submit{
+       background-color: #FCAF02;
+       color: black;
+       width: 200px;
+       height: 40px;
+       border-radius: 10px;
+       border: 0cap;
+       margin-top: 40px;
+       margin-left: 38%;
+       
+   }
+   #name,#email,#mobile,#city{
+       width: 90%;
+       background-color: #040607;
+       margin-left: 30px;
+       justify-content: space-between;
+       padding: 10px;
+       outline: none;
+       border: 2px solid #FCAF02;
+       border-radius: 20px;
+       color: #FCAF02;
+       margin-bottom: 20px;
+   }
+   #mobile,#city{
+       width: 42%;
+       margin-left: 30px;
+       justify-content: space-between;
+       padding: 10px;
+       outline: none;
+       border-color: #FCAF02;
+       border-radius: 20px;
+       color: #FCAF02;
+   }
+   #city{
+      margin-left: 30px;
+   }
+   #email::placeholder,
+   #mobile::placeholder,
+   #city::placeholder{
+      color: #FCAF02;
+      font-weight: bold;
+   }
+   .Contact{
+      color: rgb(255, 165, 0);
+      margin-left: 32px;
+      margin-bottom: 30px;
+   }
+   table,th,td{
+      border: 2px solid orange;
+      color: #f98511;
+      padding: 20px;
+   }
+   table{
+      margin: 35px;
+  
+   }
+  </style>
+</head>
+<body>
+  
+  <div class="mainContainer">
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand logo-stylish" href="#">Startup</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <div class="container intro-section">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 style="margin-left: 15px;">Startup Landing Page</h1>
+        <p style="margin-left: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. 
+        Sed cursus ante dapibus diam.Praesent libero. Sed cursus ante dapibus diam.
+        Praesent libero. Sed cursus ante dapibus diam.
+        Praesent libero. Sed cursus ante dapibus diam.
+    </p>
+        <button class="btn btn-primary"style="background-color: #d4901b;  border-color: #ec9e0a; margin-left: 20px; margin-top: 25px; width: 130px;border-radius: 15px;">Login</button>
+      </div>
+      <div class="col-md-6">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.AGB9z4kFpUcq4GocxuR0JAHaEo&pid=Api&P=0&h=180" class="img-fluid" alt="Jeff Bezos">
+      </div>
+    </div>
+  </div>
+
+  
+  <h1 class="Contact">Contact Us</h1>
+  <div class="form">
+       <label for="name"></label>
+       <input id="name" placeholder="Name" type="text">
+   
+       <label for="email"></label>
+       <input id="email" placeholder="Email" type="email">
+   
+       <label for="mobile"></label>
+       <input id="mobile" placeholder="Mobile Number" type="number">
+   
+       <label for="city"></label>
+       <input id="city" placeholder="City" type="text">
+
+   <button type="submit" id="submit">Submit Form</button>
+  </div>
+  
+  <table>
+    <thead>
+        <tr>
+            <th>SNO.</th>
+            <th>Startup Name</th>
+            <th>Startup Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>
+            <td>Nosh Technologies</td>
+            <td>Nosh Technologies provides a fully automated AI enhanced food management application! Our motto: “Convenience comes first”..</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>nikola.tech</td>
+            <td>Nikola offers an advantaged far-field technology that converts radio frequency (RF) energy into usable direct current power.</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>armis.tech</td>
+            <td>Armis enables physical retailers to communicate locally through an AI-based SaaS platform.</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>innoviz.tech</td>
+            <td>Innoviz delivers the vision and intelligence required for the mass-production of autonomous vehicles.</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Shopify</td>
+            <td>Throughout history, there have been many naming trends in startup culture. One of those trends was naming companies with an "ify" at the end. Founders of the e-commerce platform named the company Shopify to be relatable and timely to consumers.</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>Innoviti Solutions</td>
+            <td>What they do:
+                India's leading payment solutions company
+                FinTech Payments</td>
+        </tr>
+        
+    </tbody>
+    <tfoot>
+        <tr style="  background-color: #FCAF02; color: #f98511;">
+            <td>00</td>
+            <td>final Footer</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae at architecto quaerat incidunt excepturi, a harum cum quo odit doloribus quasi
+                 cupiditate aliquam nesciunt natus pariatur sapiente accusamus fugit.</td>
+                 
+        </tr>
+    </tfoot>
+
+</table>
+
+
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
